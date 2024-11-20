@@ -1,10 +1,11 @@
 import {Pressable, StyleSheet, View} from "react-native";
-import Cat from '../assets/cat.svg';
+import Cat from '../assets/gato.svg';
+
 export default function Button() {
   return (
     <Pressable
       style={({ pressed }) => [
-        { backgroundColor: pressed ? "#1F4186" : "#2751A8" },
+        { backgroundColor: pressed ? "#101010" : "#828080" },
         styles.pressable,
       ]}
     >
@@ -19,13 +20,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginBottom: "16px",
-    height: 50,
     borderRadius: 8,
     width: "50%",
     minWidth: "80px",
     maxWidth: "100px",
     height: undefined,
-    aspectRatio: 1 / 1,
+    aspectRatio: "1/1",
     outlineStyle: "none",
   },
   content: {

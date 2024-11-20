@@ -1,11 +1,14 @@
 import React from "react";
-import { Text, View, StyleSheet } from 'react-native';
+import {View, StyleSheet } from 'react-native';
 import Button from './components/botao.jsx'
- 
+import CatList from './components/ListaGatos.jsx'
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <View style={styles.containerLista}>
+        <CatList />
+      </View>
       <Button></Button>
     </View>
   );
@@ -16,5 +19,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'end',
     alignItems: 'center',
+  },
+  containerLista: {
+    width: "80%",
+    height: "80%",
+    paddingTop: "10px",
+    paddingBottom: "10px"
   },
 });
